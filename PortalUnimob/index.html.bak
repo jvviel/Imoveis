@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Portal Unimob</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/landing-page.min.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-light bg-light static-top">
+      <div class="container">
+        <a href="index.html"><img src="img/unimob.png"></a>
+        <label>Grupo Unimob</label>
+        <button type='button' class='btn btn-primary' data-toggle="modal" data-target="#modalLogin">Entrar</button>
+      </div>
+    </nav>
+
+    <!-- Masthead -->
+    <header class="masthead text-white text-center">
+      <div class="overlay"></div>
+      <!-- Example single danger button -->
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-9 mx-auto">
+            <h1 class="mb-5" >Encontrar um imóvel nunca foi tão fácil, experimente:</h1>
+          </div>
+          <header>
+
+          <center>
+          <div class="dropdown-mega-content">
+
+          <!---------- oia o form aqui ---->
+          <form id="propertiesFormHeader" action="vitrine_dinamica.php" method="POST">
+          <input type="hidden" id="valores" name="valores" value="">
+          <div class="container p-none">
+         <div class="row" style="margin-left: 150px">
+
+          <div class="col-md-2 mx-auto">
+
+          <div class="form-control-custom">
+
+          <select class="form-control text-uppercase font-size-sm" name="operacao" data-msg-required="Obrigatório" id="operacao" required="">
+
+          <option value="Alugar">Alugar</option>
+          <option value="Comprar">Comprar</option>
+
+          </select>
+
+          </div>
+          </div>
+          <div class="col-md-2 mx-auto" >
+          <div class="form-control-custom">
+          <select class="form-control text-uppercase font-size-sm" name="tipo" id="tipo">
+
+          <option value="">Tipos</option>
+          <option value="Apartamento">Apartamento</option>
+          <option value="Casa">Casa</option>
+          <option value="Casa em condominio">Casa em condominio</option>
+          <option value="Comercial">Comercial</option>
+          <option value="Chacara">Chacara</option>
+          <option value="Terreno">Terreno</option>
+
+
+          </select>
+          </div>
+          </div>
+
+          <div class="col-md-3 mx-auto">
+          <div class="form-control-custom">
+
+          <select class="form-control text-uppercase font-size-sm" name="cidade" id="cidade">
+
+
+
+          <option value="">Todas as cidades</option>
+
+
+
+
+          <option value="Campo Grande">Campo Grande</option>
+          <option value="Campo Grande">Campo Grande</option>
+          <option value="Presidente Prudente">Presidente Prudente</option>
+          <option value="Regente Feijó">Regente Feijó</option>
+          <option value="Sandovalina">Sandovalina</option>
+
+          </select>
+          </div>
+          </div>
+
+          <div class="col-md-3 mx-auto">
+          <div class="form-control-custom">
+
+          <select class="form-control text-uppercase font-size-sm" name="imob" id="cidade">
+
+
+
+          <option value="">Todas as imobiliárias</option>
+
+
+
+
+          <option value="1">Rio Branco</option>
+          <option value="2">Willy Macedo</option>
+          <option value="3">Belmont</option>
+          <option value="4">Samburá</option>
+          <option value="5">Dponta</option>
+
+          </select>
+          </div>
+          </div>
+
+          <div class="col-md-2 mx-auto">
+          <input type="submit" value="Buscar" class="btn btn-primary btn-df btn-block text-uppercase font-size-sm">
+          </div>
+          </div>
+          </div>
+          </div>
+          </form>
+          </header>
+          </div>
+          </div>
+          </center>
+    </header>
+
+    <!-- Icons Grid -->
+    <section class="features-icons bg-light text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+              <div class="features-icons-icon d-flex">
+                <i class="icon-screen-desktop m-auto text-primary"></i>
+              </div>
+              <h3>Credibilidade</h3>
+              <p class="lead mb-0">A parceria com grandes nomes nos faz maiores ainda.</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+              <div class="features-icons-icon d-flex">
+                <i class="icon-layers m-auto text-primary"></i>
+              </div>
+              <h3>Qualidade</h3>
+              <p class="lead mb-0">Forncemos a certeza de que encontrará o melhor imóvel para você</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+              <div class="features-icons-icon d-flex">
+                <i class="icon-check m-auto text-primary"></i>
+              </div>
+              <h3>Fácil de Usar</h3>
+              <p class="lead mb-0">A simplicidade é o objetivo de nossa plataforma</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Image Showcases -->
+    <section class="showcase">
+      <div class="container-fluid p-0">
+        <div class="row no-gutters">
+
+          <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/casa1.jpg');"></div>
+          <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+            <h2>Apartamento para venda</h2>
+            <p class="lead mb-0">Vila Santiago, 354 - Presidente P.</p>
+            <p class="lead mb-0">4 quartos | 1 Sala ampla | 2 Banheiros</p>
+            <p class="lead mb-0">Samburá Imóveis</p>
+            <p class="lead mb-0">Apenas R$ 14.000,00</p>
+            <br>
+            <a href="imovelSantiago.php"><button type="button" class="btn btn-primary btn-df">+Detalhes</button></a>
+          </div>
+        </div>
+        <div class="row no-gutters">
+          <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/casa2.jpg');"></div>
+          <div class="col-lg-6 my-auto showcase-text">
+            <h2>Casa para venda</h2>
+            <p class="lead mb-0">Vila Ouro, 244 - Presidente P.</p>
+            <p class="lead mb-0">5 quartos | 2 Sala ampla | 3 Banheiros | Pscina e Garagem</p>
+            <p class="lead mb-0">Rio Branco</p>
+            <p class="lead mb-0">Apenas R$ 144.000,00</p>
+            <br>
+            <a href="imovelOuro.php"><button type="button" class="btn btn-primary btn-df">+Detalhes</button></a>
+          </div>
+        </div>
+        <div class="row no-gutters">
+          <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/casa3.jpg');"></div>
+          <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+            <h2>Sala Comercial para alugar</h2>
+            <p class="lead mb-0">Vila Glória, 482 - Presidente P.</p>
+            <p class="lead mb-0">Piso superior, com varandas 2 banheiros e sala</p>
+            <p class="lead mb-0">Rio Branco</p>
+            <p class="lead mb-0">Apenas R$ 500,00</p>
+            <br>
+            <a href="imovelComercial.php"><button type="button" class="btn btn-primary btn-df">+Detalhes</button></a>
+          </div>
+        </div>
+      </div>
+    </section>
+<a href="https://www.facebook.com/messages/t/1536218739758752" target="_blank" style="backface-visibility: hidden; z-index: 2147483647; position: fixed; top: 102%; right: 0px; margin-top: -85px;"><img src="img/selo.png" style="width: 15%; float: right;"></a>
+    <!-- Testimonials -->
+    <section class="testimonials text-center bg-light">
+      <div class="container">
+        <h2 class="mb-5">Credenciados</h2>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+              <img class="img-fluid rounded-circle mb-3" src="img/riobranco.jpg" alt="">
+              <h5>Rio Branco</h5>
+              <p class="font-weight-light mb-0">A Imobiliária Rio Branco é reconhecidamente, uma das empresas mais eficientes no mercado imobiliário regional e atua há mais de 40 anos com dinamismo e profissionalismo na prestação de serviços.</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+              <img class="img-fluid rounded-circle mb-3" src="img/sambura.jpg" alt="">
+              <h5>Samburá</h5>
+              <p class="font-weight-light mb-0">Antenada a evolução do mercado, a empresa investe em tecnologia e atualização para oferecer sempre excelência no desenvolvimento dos negócios</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+              <img class="img-fluid rounded-circle mb-3" src="img/belmont.jpg" alt="">
+              <h5>Belmont</h5>
+              <p class="font-weight-light mb-0">Belmont Imóveis, empresa de administração, venda e avaliação de imóveis servindo a cidade e região há mais de 20 anos no mercado imobiliário possui sede própria, estacionamento privativo e está situado à Rua Djalma Dutra, nº 43, centro, Presidente Prudente, SP.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Call to Action -->
+    <section class="call-to-action text-white text-center">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-9 mx-auto">
+            <h2 class="mb-4">Experimente, é rápido:</h2>
+          </div>
+          <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+            <form>
+              <div class="form-row">
+                <div class="col-12 col-md-9 mb-2 mb-md-0">
+                  <input type="text" class="form-control form-control-lg" placeholder="Ex: Rua Ouro, Vila Clotilde - Presidente Prudente">
+                </div>
+                <div class="col-12 col-md-3">
+                  <a href="vitrine.html"><button type="button" class="btn btn-block btn-lg btn-primary">
+                  Buscar</button></a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+            <ul class="list-inline mb-2">
+              <li class="list-inline-item">
+                <a href="#">Sobre</a>
+              </li>
+              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <a href="#">Contatos</a>
+              </li>
+              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <a href="#">Termos de Uso</a>
+              </li>
+              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <a href="#">Política de Privacidade</a>
+              </li>
+            </ul>
+            <p class="text-muted small mb-4 mb-lg-0">&copy; Portal Unimob 2017. Todos os Direitos Reservados.</p>
+          </div>
+          <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item mr-3">
+                <a href="#">
+                  <i class="fa fa-facebook fa-2x fa-fw"></i>
+                </a>
+              </li>
+              <li class="list-inline-item mr-3">
+                <a href="#">
+                  <i class="fa fa-twitter fa-2x fa-fw"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-instagram fa-2x fa-fw"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- modal  Login -->
+    <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="tituloModal">Login</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        </div>
+        <div class="modal-body">
+          <form id="frmExcluirTipoMusica" name="frmExcluirTipoMusica" method="post" action="valida_login.php">
+                    <div class="form-group">
+                      <label for="lblNomeCompleto">Usuário: </label>
+                      <input type="text" class="form-control" id="usuario" name="usuario" placeholder="Ex: João Da Silva" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="lblEmail">Senha: </label>
+                      <input type="password" class="form-control" id="senha" name="senha">
+                    </div>
+            <input name="bt_exclui" id="bt_exclui" type="submit" value="Logar" class="btn btn-primary"/>
+            <button type='button' class='btn btn-secundary' data-toggle="modal" data-target="#modalCadastrar">Cadastre-se</button>
+          </form>
+        </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- modal  -->
+
+    <!-- modal  Cadastre-se -->
+    <div class="modal fade" id="modalCadastrar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="tituloModal">Cadastro de usuário</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        </div>
+        <div class="modal-body">
+          <form id="frmExcluirTipoMusica" name="frmExcluirTipoMusica" method="post" action="insere_usuarios.php">
+                    <div class="form-group">
+                      <label for="lblNomeCompleto">Nome Completo: </label>
+                      <input type="text" class="form-control" id="nome_completo_cadastro" name="nome_completo_cadastro" placeholder="Ex: João Da Silva" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="lblNomeCompleto">Email: </label>
+                      <input type="email" class="form-control" id="email_cadastro" name="email_cadastro" placeholder="Ex: João Da Silva" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="lblEmail">Senha: </label>
+                      <input type="password" class="form-control" id="senha_cadastro" name="senha_cadastro">
+                    </div>
+            <input name="bt_exclui" id="bt_exclui" type="submit" value="Confirmar" class="btn btn-primary"/>
+          </form>
+        </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- modal  -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+  <!-- SCRIPT DA MODAL EXCLUIR -->
+  <script type="text/javascript">
+    $('#modalLogin').on('show.bs.modal', function (event) {
+    var button = $(event.relatedTarget)
+    var recipient = button.data('whateverexcluir')
+    var modal = $(this)
+    modal.find('#id-tipo').val(recipient)
+  })
+  </script>
+  <!-- SCRIPT DA MODAL EXCLUIR -->
+
+  <!-- SCRIPT DA MODAL EXCLUIR -->
+  <script type="text/javascript">
+    $('#modalCadastrar').on('show.bs.modal', function (event) {
+    var button = $(event.relatedTarget)
+    var recipient = button.data('whateverexcluir')
+    var modal = $(this)
+    modal.find('#id-tipo').val(recipient)
+  })
+  </script>
+  <!-- SCRIPT DA MODAL EXCLUIR -->
+
+
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>3 Col Portfolio - Start Bootstrap Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/3-col-portfolio.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-light bg-light static-top">
+      <div class="container">
+        <a href="index.html"><img src="img/unimob.png"></a>
+        <label>Grupo Unimob</label>
+        <a class="btn btn-primary" href="#">Entrar</a>
+      </div>
+    </nav>
+
+
+    <br/>
+    <!-- Page Content -->
+    <div class="container">
+
+
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+                  <!-- Pesquisar -->
+                    <b>
+                    <font color="#1e88e5" size="5">
+                    <label> Busca personalizada</label></font><br>
+
+                        <br>
+                    <font color="black" size="3">
+                    <label>Tipo: </label><br>
+                    <select class="form-control text-uppercase font-size-sm">
+                      <option value="aluguel">Aluguel</option>
+                      <option value="compra">Compra</option>
+                    </select><br>
+                    <label>Finalidade: </label><br>
+                    <select class="form-control text-uppercase font-size-sm" name="finalidade"
+                    required="">
+
+                      <option value="Apartamento">Apartamento</option>
+                      <option value="Casa">Casa</option>
+                      <option value="Casa em condominio">Casa em condominio</option>
+                      <option value="Comercial">Comercial</option>
+                      <option value="Chacara">Chacara</option>
+                      <option value="Terreno">Terreno</option>
+
+                  </select>
+                    <br/>
+
+                    <label>Cidade: </label>
+                    <select class="form-control text-uppercase font-size-sm" name="cidade">
+                      <option value="assis">Assis</option>
+                      <option value="prudente">Presidente Prudente</option>
+                      <option value="marilia">Marília</option>
+                      <option value="sao paulo">São Paulo</option>
+                    </select><br>
+                    <label>Quantidade de Quartos: </label>
+                  <select class="form-control text-uppercase font-size-sm" name="quarto"
+                   required="">
+
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4 ou mais</option>
+
+                  </select>
+                    <br>
+                    <label>Quantidade de Suítes: </label><br>
+                    <select class="form-control text-uppercase font-size-sm" name="suite"
+                    required="">
+
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3 ou mais</option>
+
+                  </select>
+                    <br/>
+
+                    <label>Vagas para carro: </label><br>
+                    <select class="form-control text-uppercase font-size-sm" name="carro"
+                   required="">
+
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3 ou mais</option>
+
+
+                  </select>
+                    <br/>
+
+                    <label>Mobiliado: </label><br>
+                    <select class="form-control text-uppercase font-size-sm" name="mobilia"
+                    required="">
+
+                      <option value="sim">Sim</option>
+                      <option value="nao">Não</option>
+
+
+                  </select>
+                    </font>
+                    </b>
+                    <br/>
+                          </div>
+        </form>
+      <div class="modal-footer">
+      <a href="vitrine.html"><button type="button" class="btn btn-primary" >Buscar</button></a>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+      <!-- Page Heading -->
+      <h1 class="my-4">
+        <small>Resultados de busca</small>
+      </h1>
+
+      <div class="row">
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a href="#"><img class="card-img-top" src="img/casa1.jpg" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">Casa</a>
+              </h4>
+              <p class="card-text">Imobiliária: Rio Branco</p>
+              <p class="card-text">Aluguel - apenas R$ 500,00</p>
+              <a href="detalhes.php"><button type="button" class="btn btn-primary btn-df">+Detalhes</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a href="#"><img class="card-img-top" src="img/casa2.jpg" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">Apartamento</a>
+              </h4>
+              <p class="card-text">Imobiliária: Samburá</p>
+              <p class="card-text">Aluguel - apenas R$ 3.000,00</p>
+              <a href="detalhes.php"><button type="button" class="btn btn-primary btn-df">+Detalhes</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a href="#"><img class="card-img-top" src="img/casa4.png" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">Casa</a>
+              </h4>
+              <p class="card-text">Imobiliária: Samburá</p>
+              <p class="card-text">Aluguel - apenas R$ 750,00</p>
+              <a href="detalhes.php"><button type="button" class="btn btn-primary btn-df">+Detalhes</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a href="#"><img class="card-img-top" src="img/casa5.jpg" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">Casa</a>
+              </h4>
+              <p class="card-text">Imobiliária: Belmont</p>
+              <p class="card-text">Aluguel - apenas R$ 580,00</p>
+              <a href="detalhes.php"><button type="button" class="btn btn-primary btn-df">+Detalhes</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a href="#"><img class="card-img-top" src="img/casa6.jpg" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">Apartamento</a>
+              </h4>
+              <p class="card-text">Imobiliária: Belmont</p>
+              <p class="card-text">Aluguel - apenas R$ 800,00</p>
+              <a href="detalhes.php"><button type="button" class="btn btn-primary btn-df">+Detalhes</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a href="#"><img class="card-img-top" src="img/casa7.jpg" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">Casa</a>
+              </h4>
+              <p class="card-text">Imobiliária: Rio Branco</p>
+              <p class="card-text">Aluguel - apenas R$ 1500,00</p>
+              <a href="detalhes.php"><button type="button" class="btn btn-primary btn-df">+Detalhes</button></a>
+
+            </div>
+          </div>
+        </div>
+        <div class="container">
+        </div>
+      <!-- /.row -->
+      <!-- Pagination -->
+      <ul class="pagination justify-content-center">
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+            <span class="sr-only">Previous</span>
+          </a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">1</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">2</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">3</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+            <span class="sr-only">Next</span>
+          </a>
+        </li>
+      </ul>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Portal Unimob 2017</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
